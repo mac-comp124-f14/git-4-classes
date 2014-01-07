@@ -14,22 +14,34 @@ pip install github3.py
 git clone https://github.com/mac-comp124-f13/teachers.git
 ```
 
+###Configure your installation
+Collect github usernames for your students. Then edit config.txt to reflect your course. The default config.txt looks like:
+```
+org=mac-comp124-f13
+owner=shilad
+admin=shilad
+admin=rgold1
+student=jack
+student=jill
+```
+The format is self-explanatory. All values are to the right of the equals sign are github usernames. The admin accounts will have read/write access to all homework forks.
+
 ####Creating teams
 
-You'll need to create a separate team for each user. Add git usernames to `usernames.txt`
+You'll need to create a separate team for each user. To do so, run:
 ```bash
 python ./mk_teams.py
 ```
-This command can be safely re-run on existing teams when `usernames.txt` is updated.
+This command can be safely re-run on existing teams when students are added to `config.txt`.
 
-####Instructor process for creating an assignment
+####Creating an assignment
 First, create an empty github project.
 ```bash
 python ./mk_repo.py hw0 True
 ```
 
 The last argument (`True` or `False`) specifies whether the repo is private. 
-You'll want to make it private for an assignment, but activities can be public.
+You'll want to make assignments private, but activities can be public.
 Git organizations have a cap on the number of private repos (e.g. a silver plan has 20).
 Note that a fork of a private repo doesn't count towards your cap.
 
