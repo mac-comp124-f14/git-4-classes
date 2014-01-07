@@ -49,20 +49,26 @@ Clone the newly created project out and create the homework assignment.
 Edit README.md to contain the homework instructions.
 Push your work to master when you're done.
 
-####Student process for completing an assignment
+###Student process for completing an assignment
 To complete an assignment, a student:
 
 1. Creates a private fork of an assignment.
-2. Removes access to their fork for all teams but their own. (TODO: write a script to do this).
-3. Creates a local clone of their forked repo.
-4. Completes the assignment and pushes their changes to master on the forked repo.
+2. Creates a local clone of their forked repo.
+3. Completes the assignment and pushes their changes to master on the forked repo.
 
-####Grading student assignments
+###Grading student assignments
 
+Run the prepare_to_grade.py script:
+
+```bash
+python ./prepare_to_grade.py hw0
+```
+
+For each student fork of hw0, this will create a branch called "start" that is identical to the original forked assignment. It will then make a pull request against the assignment. The instructor and grader can comment on each pull request.
 
 ###Adding new students to existing assignments
 If you create a new team / student after an assignment is already created, you can run the following script:
 ```bash
-python ./add_teams.py hw0 game-of-life activity1 ....
+python ./add_teams.py hw0 hw2 ....
 ```
 Each repo must already exist. This command can be safely re-run.
