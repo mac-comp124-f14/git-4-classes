@@ -3,6 +3,15 @@ git-4-classes
 
 A collection of utilities for instructors using GitHub in the classroom.
 
+The general workflow for preparing, posting, and grading assignments is:
+
+* The instructor creates an organizational educational account that supports private repos.
+* Each student registers on GitHub and shares their username with the instructor.
+* The instructor creates a separate organizational "team" for each student.
+* The instructor posts an assignment, and makes it available to all students / teams.
+* Students fork the assignment, complete the assignment on their fork, and push their finished work.
+* The instructor creates a pull request in the student's fork against the original assignment and comments on the student's work.
+
 
 ###Preparing 
 1. Request a free [GitHub organizational education account](https://github.com/edu).
