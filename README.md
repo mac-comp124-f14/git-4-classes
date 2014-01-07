@@ -1,9 +1,7 @@
 git-4-classes
 =============
 
-A collection of utilities for instructors using GitHub in the classroom.
-
-The general workflow for preparing, posting, and grading assignments is:
+A collection of utilities for instructors using GitHub in the classroom. The general workflow for preparing, posting, and grading assignments is:
 
 * The instructor creates an organizational educational account that supports private repos.
 * Each student registers on GitHub and shares their username with the instructor.
