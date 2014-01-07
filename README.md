@@ -4,7 +4,7 @@ git-4-classes
 A collection of utilities for instructors using GitHub in the classroom.
 
 
-####Preparing 
+###Preparing 
 1. Request a free [GitHub organizational education account](https://github.com/edu).
 2. Ask all your students to create github accounts and get their github usernames.
 3. Install https://github.com/sigmavirus24/github3.py and clone this repo:
@@ -26,7 +26,7 @@ student=jill
 ```
 The format is self-explanatory. All values are to the right of the equals sign are github usernames. The admin accounts will have read/write access to all homework forks.
 
-####Creating teams
+###Creating teams
 
 You'll need to create a separate team for each user. To do so, run:
 ```bash
@@ -34,7 +34,7 @@ python ./mk_teams.py
 ```
 This command can be safely re-run on existing teams when students are added to `config.txt`.
 
-####Creating an assignment
+###Creating an assignment
 First, create an empty github project.
 ```bash
 python ./mk_repo.py hw0 True
@@ -49,13 +49,6 @@ Clone the newly created project out and create the homework assignment.
 Edit README.md to contain the homework instructions.
 Push your work to master when you're done.
 
-####Make the assignment readable to students
-Once the homework assignment is ready for students, you need to add each student's team as a collaborator with pull permissions.
-```bash
-python ./add_teams.py hw0 game-of-life activity1 ....
-```
-Each repo must already exist. This command can be safely re-run on existing teams when `usernames.txt` is updated.
-
 ####Student process for completing an assignment
 To complete an assignment, a student:
 
@@ -65,3 +58,11 @@ To complete an assignment, a student:
 4. Completes the assignment and pushes their changes to master on the forked repo.
 
 ####Grading student assignments
+
+
+###Adding new students to existing assignments
+If you create a new team / student after an assignment is already created, you can run the following script:
+```bash
+python ./add_teams.py hw0 game-of-life activity1 ....
+```
+Each repo must already exist. This command can be safely re-run.
