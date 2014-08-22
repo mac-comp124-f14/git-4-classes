@@ -18,7 +18,7 @@ A collection of utilities for instructors using GitHub in the classroom. The gen
 
 ```bash
 pip install github3.py
-git clone https://github.com/mac-comp124-f13/teachers.git
+git clone https://github.com/mac-comp124-f14/git-4-classes.git
 ```
 
 ###Configure your installation
