@@ -93,6 +93,7 @@ class GitHub:
                 raise Exception('failed to create pull from %s to %s in repo %s/%s' % (from_branch, to_branch, owner, repo))
         except:
             """ For now there seems to be a bug in git repos."""
+            print('pull request didnt work for owner=%s repo=%s' % (owner, repo))
         
     def test(self):
         u = self.gh.user()
