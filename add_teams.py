@@ -7,7 +7,7 @@
 
 import sys
 
-import config
+from config import Config
 import my_github
 
 def add_teams_to_repo(gh, reponame, users):
@@ -24,7 +24,7 @@ if __name__ == '__main__':
         print 'usage: %s repo_name1 repo_name2 ...' % sys.argv[0]
         sys.exit(1)
 
-    config = config.Config()
-    gh = my_github.GitHub(config.owner)
+    config = Config()
+    gh = my_github.GitHub(config.org, config.owner)
     for name in sys.argv[1:]:
-        main(gh, name, config.students)
+        add_teams_to_repo(gh, name, config.students)

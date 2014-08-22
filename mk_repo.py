@@ -1,10 +1,10 @@
 import sys
-import config
+from config import Config
 import my_github
 
 def main(reponame, is_private):
-    config = config.Config()
-    gh = my_github.GitHub(config.owner)
+    config = Config()
+    gh = my_github.GitHub(config.org, config.owner)
     gh.mk_repo(reponame, is_private)
 
     for username in config.students:
