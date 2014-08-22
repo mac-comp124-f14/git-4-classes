@@ -5,7 +5,9 @@
 # It then creates a pull request against that branch.
 #
 
+from config import Config
 import my_github
+import sys
 
 
 def main(gh, config, repo):
@@ -37,6 +39,6 @@ if __name__ == '__main__':
     if len(sys.argv) != 2:
         print 'usage: %s repo_name' % sys.argv[0]
         sys.exit(1)
-    config = config.Config()
-    gh = my_github.GitHub(config.owner)
+    config = Config()
+    gh = my_github.GitHub(config.org, config.owner)
     main(gh, config, sys.argv[1])

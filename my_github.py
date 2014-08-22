@@ -1,5 +1,6 @@
 import getpass
 import github3  # https://github.com/sigmavirus24/github3.py
+import traceback
 
 
 class GitHub:

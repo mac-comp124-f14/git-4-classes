@@ -1,6 +1,6 @@
-org=mac-comp124-f13
+org=mac-comp124-f14
 owner=shilad
 admin=shilad
-admin=rgold1
-student=foo
-student=bar
+admin=libbyshoop
+admin=bretjackson
+student=Alan502
