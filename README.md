@@ -79,3 +79,7 @@ If you create a new team / student after an assignment is already created, you c
 python ./add_teams.py hw0 hw2 ....
 ```
 Each repo must already exist. This command can be safely re-run.
+
+#Missing scripts
+ * Import existing repo in other org as new repo in this org.
+ * Add admins plus owners to separate team; add that team to specific repos.
