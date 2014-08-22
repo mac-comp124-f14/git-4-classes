@@ -6,12 +6,12 @@
 
 import sys
 
-import config
+from config import Config
 import my_github
 
 def main():
-    config = config.Config()
-    gh = my_github.GitHub(config.owner)
+    config = Config()
+    gh = my_github.GitHub(config.org, config.owner)
 
     existing = gh.get_team_names()
     print 'existing teams:', existing
