@@ -30,3 +30,5 @@ student=sfaridan
 student=sjgilbert
 student=mcartier
 student=almuaikil
+student=alsulami
+student=Alsulami2014
