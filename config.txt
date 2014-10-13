@@ -1,5 +1,5 @@
 org=mac-comp124-f14
-owner=libbyshoop
+owner=bretjackson
 admin=shilad
 admin=libbyshoop
 admin=bretjackson
@@ -22,7 +22,6 @@ student=tkeppler
 student=jlee11
 student=wyokoyam
 student=jmohoang
-student=dedward2
 student=Cheeseyx
 student=stwyde
 student=libbylxb
