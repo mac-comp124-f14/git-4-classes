@@ -17,7 +17,6 @@ student=skrgovic
 student=ealfvin
 student=mibaid
 student=yangmingli
-student=JWillar1
 student=tkeppler
 student=jlee11
 student=wyokoyam
